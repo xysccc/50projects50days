@@ -6,7 +6,6 @@ const SEARCH_API =
 const main = document.getElementById("main");
 const search = document.getElementById("search");
 const form = document.getElementById("form");
-const btn = document.getElementById("btn");
 async function getMovies(str) {
   const res = await fetch(str);
   const { results } = await res.json();

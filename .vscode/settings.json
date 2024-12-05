@@ -1,3 +1,4 @@
 {
-  "workbench.editor.wrapTabs": false
+  "workbench.editor.wrapTabs": false,
+  "liveServer.settings.port": 5501
 }
