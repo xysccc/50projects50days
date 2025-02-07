@@ -10,7 +10,7 @@ form.addEventListener("submit", async function (e) {
   const { data: data1 } = await axios.get(new URL(val, APIURL).href);
   displayUser(data1);
   const reposUrl = new URL(`${val}/repos`, APIURL);
-  reposUrl.searchParams = new URLSearchParams({ sort: "created" });
+  reposUrl.search = new URLSearchParams({ sort: "created" }).toString();
   const { data: data2 } = await axios.get(reposUrl.href);
   displayRepos(data2);
 });
